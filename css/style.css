@@ -1,0 +1,15 @@
+body { background: #f7f8fa; color: #20252b; }
+.navbar-brand { letter-spacing: .2px; }
+.section-title { font-size: clamp(1.35rem, 2vw, 1.8rem); font-weight: 700; border-left: 4px solid #dc3545; padding-left: .75rem; }
+.hero-image { height: clamp(250px, 42vw, 460px); object-fit: cover; filter: brightness(.72); }
+.carousel-caption { left: 8%; right: 8%; bottom: 2.5rem; text-shadow: 0 1px 3px #000; }
+.carousel-caption h2 { max-width: 760px; font-size: clamp(1.4rem, 3.2vw, 2.6rem); font-weight: 700; }
+.card { border: 0; overflow: hidden; }
+.card-img-top { transition: transform .25s ease; }
+.card:hover .card-img-top { transform: scale(1.025); }
+.news-image { height: 210px; object-fit: cover; }
+.category-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; }
+.skip-link:focus { position: fixed; top: 1rem; left: 1rem; z-index: 2000; background: #fff; padding: .75rem; }
+footer { margin-top: 1rem; }
+@media (max-width: 575.98px) { .carousel-caption { bottom: 1rem; } .hero-image { height: 280px; } .news-image { height: 190px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }

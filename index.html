@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Altas Notícias: notícias e destaques sobre economia, tecnologia e atualidades.">
+  <title>Altas Notícias | Informação em destaque</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="visually-hidden-focusable skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid fa-newspaper me-2" aria-hidden="true"></i>Altas Notícias</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#esportes">Esportes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#economia">Economia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cultura">Cultura</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ultimas">Últimas notícias</a></li>
+        </ul>
+        <form class="d-flex" role="search" id="formPesquisa">
+          <label class="visually-hidden" for="campoPesquisa">Pesquisar notícias</label>
+          <input class="form-control me-2" id="campoPesquisa" type="search" placeholder="Pesquisar notícias..." aria-label="Pesquisar notícias">
+          <button class="btn btn-outline-light" type="submit" aria-label="Pesquisar"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main id="conteudo" class="container py-4">
+    <section aria-labelledby="destaquesTitulo" class="mb-5">
+      <div class="d-flex align-items-center justify-content-between mb-3"><h1 id="destaquesTitulo" class="section-title mb-0">Em destaque</h1><span class="badge text-bg-danger">Destaques</span></div>
+      <div id="carrosselDestaques" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Destaque 1"></button>
+          <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="1" aria-label="Destaque 2"></button>
+          <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="2" aria-label="Destaque 3"></button>
+        </div>
+        <div class="carousel-inner rounded-3">
+          <div class="carousel-item active"><img src="img/1.jpg" class="d-block w-100 hero-image" alt="Moedas e plantas representando crescimento financeiro"><div class="carousel-caption text-start"><span class="badge text-bg-success mb-2">Economia</span><h2>Crescimento financeiro começa com planejamento</h2><p class="d-none d-md-block">Entenda como organização e informação ajudam nas decisões do dia a dia.</p></div></div>
+          <div class="carousel-item"><img src="img/2.jpg" class="d-block w-100 hero-image" alt="Imagem ilustrativa do segundo destaque do portal"><div class="carousel-caption text-start"><span class="badge text-bg-primary mb-2">Atualidades</span><h2>Os assuntos que movimentam a semana</h2><p class="d-none d-md-block">Acompanhe os principais temas e fique por dentro das novidades.</p></div></div>
+          <div class="carousel-item"><img src="img/3.jpg" class="d-block w-100 hero-image" alt="Imagem ilustrativa do terceiro destaque do portal"><div class="carousel-caption text-start"><span class="badge text-bg-warning mb-2">Comunidade</span><h2>Ideias e iniciativas que merecem atenção</h2><p class="d-none d-md-block">Conheça projetos e tendências que fazem parte da conversa.</p></div></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Destaque anterior</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo destaque</span></button>
+      </div>
+    </section>
+
+    <section id="ultimas" class="mb-5" aria-labelledby="ultimasTitulo">
+      <div class="d-flex align-items-center justify-content-between mb-3"><h2 id="ultimasTitulo" class="section-title mb-0">Últimas notícias</h2><span id="contadorResultados" class="text-secondary small" aria-live="polite">3 notícias</span></div>
+      <div class="row g-4" id="listaNoticias">
+        <div class="col-md-6 col-lg-4 noticia" data-categoria="economia" data-texto="economia crescimento financeiro planejamento moedas"><article class="card h-100 shadow-sm"><img src="img/1.jpg" class="card-img-top news-image" alt="Moedas empilhadas e plantas crescendo"><div class="card-body d-flex flex-column"><span class="category-label text-success">Economia</span><h3 class="h5 card-title mt-2">Planejamento financeiro: pequenos hábitos fazem diferença</h3><p class="card-text">Organização do orçamento e metas realistas podem ajudar a construir uma rotina financeira mais consciente.</p><a href="#economia" class="btn btn-outline-success mt-auto align-self-start">Ver assunto</a></div></article></div>
+        <div class="col-md-6 col-lg-4 noticia" data-categoria="tecnologia" data-texto="tecnologia inovação ferramentas digitais aprendizado"><article class="card h-100 shadow-sm"><img src="img/2.jpg" class="card-img-top news-image" alt="Imagem ilustrativa para notícia de tecnologia"><div class="card-body d-flex flex-column"><span class="category-label text-primary">Tecnologia</span><h3 class="h5 card-title mt-2">Tecnologia e inovação no cotidiano</h3><p class="card-text">Ferramentas digitais continuam transformando a maneira como as pessoas estudam, trabalham e se comunicam.</p><a href="#tecnologia" class="btn btn-outline-primary mt-auto align-self-start">Ver assunto</a></div></article></div>
+        <div class="col-md-6 col-lg-4 noticia" data-categoria="cultura" data-texto="cultura comunidade iniciativas criatividade"><article class="card h-100 shadow-sm"><img src="img/3.jpg" class="card-img-top news-image" alt="Imagem ilustrativa para notícia de cultura e comunidade"><div class="card-body d-flex flex-column"><span class="category-label text-danger">Cultura</span><h3 class="h5 card-title mt-2">Iniciativas locais fortalecem a comunidade</h3><p class="card-text">Projetos culturais e ações coletivas podem criar oportunidades de encontro, aprendizado e participação.</p><a href="#cultura" class="btn btn-outline-danger mt-auto align-self-start">Ver assunto</a></div></article></div>
+      </div>
+      <p id="semResultados" class="alert alert-info mt-3 d-none">Nenhuma notícia encontrada. Tente pesquisar por outro termo.</p>
+    </section>
+
+    <section class="row g-4 mb-5">
+      <div class="col-lg-8">
+        <h2 class="section-title mb-3">Sobre o portal</h2>
+        <p>O <strong>Altas Notícias</strong> é um projeto acadêmico desenvolvido para praticar a criação de páginas web com HTML, CSS e Bootstrap. A proposta é organizar conteúdos em uma interface simples, responsiva e fácil de navegar.</p>
+        <p class="mb-0">Os textos desta demonstração são ilustrativos e não representam notícias jornalísticas verificadas.</p>
+      </div>
+      <aside class="col-lg-4" aria-labelledby="categoriasTitulo">
+        <h2 id="categoriasTitulo" class="section-title mb-3">Explore por categoria</h2>
+        <div class="accordion" id="acordeaoCategorias">
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#painelEconomia" aria-expanded="true" aria-controls="painelEconomia">Economia</button></h3><div id="painelEconomia" class="accordion-collapse collapse show" data-bs-parent="#acordeaoCategorias"><div class="accordion-body">Conteúdos ilustrativos sobre orçamento, planejamento e finanças pessoais. <a href="#economia">Ver notícias de economia</a>.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#painelTecnologia" aria-expanded="false" aria-controls="painelTecnologia">Tecnologia</button></h3><div id="painelTecnologia" class="accordion-collapse collapse" data-bs-parent="#acordeaoCategorias"><div class="accordion-body">Novidades e ideias relacionadas às ferramentas digitais. <a href="#tecnologia">Ver notícias de tecnologia</a>.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#painelCultura" aria-expanded="false" aria-controls="painelCultura">Cultura</button></h3><div id="painelCultura" class="accordion-collapse collapse" data-bs-parent="#acordeaoCategorias"><div class="accordion-body">Projetos culturais, criatividade e iniciativas comunitárias. <a href="#cultura">Ver notícias de cultura</a>.</div></div></div>
+        </div>
+      </aside>
+    </section>
+    <div id="economia" class="category-anchor"></div><div id="tecnologia" class="category-anchor"></div><div id="cultura" class="category-anchor"></div><div id="esportes" class="category-anchor"></div>
+  </main>
+  <footer class="bg-dark text-light py-4"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><p class="mb-0">&copy; <span id="anoAtual"></span> Altas Notícias</p><p class="mb-0 text-white-50">Projeto acadêmico de Front-end · HTML, CSS e Bootstrap</p></div></footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
