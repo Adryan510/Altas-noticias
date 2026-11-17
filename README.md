@@ -25,3 +25,9 @@ Este projeto pode ser publicado com GitHub Pages usando a branch `main` e a past
 
 ## Observação
 Os textos apresentados são ilustrativos e não representam notícias reais verificadas. As imagens são usadas como recursos visuais do projeto acadêmico.
+
+## 🌐 Acesse o projeto
+
+O Altas Notícias está disponível para visualização online pelo GitHub Pages.
+
+**[Visualizar o site](https://adryan510.github.io/Altas-noticias/)**
